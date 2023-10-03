@@ -25,7 +25,7 @@ def calculate_eigen(A):
 def calculate_determinant(A):
     # Sử dụng SymPy để tính định thức
     A_sym = Matrix(A)
-    determinant = A_sym.det()
+    determinant = np.linalg.det.det()
     return determinant
 
 # Tính cơ sở và không gian cột của ma trận
