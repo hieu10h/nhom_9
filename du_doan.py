@@ -107,8 +107,17 @@ axs[1, 1].plot(x5, predictions, 'r', label='Dự đoán')
 axs[1, 1].set_xlabel('Lượng đề luyện tập')
 axs[1, 1].set_ylabel('Chỉ số thành tích')
 axs[1, 1].legend()
-plt.tight_layout()
-plt.show()
+
 #Ẩn trục thừa
 axs[1, 2].axis('off')
+
+# Thêm tiêu đề và chỉ dẫn
+axs[0, 0].set_title('Số giờ học')
+axs[0, 1].set_title('Điểm trước đó')
+axs[0, 2].set_title('Hoạt động ngoại khóa')
+axs[1, 0].set_title('Giờ ngủ')
+axs[1, 1].set_title('Lượng đề luyện tập')
+
+
 plt.tight_layout()
+plt.show()
