@@ -1,0 +1,14 @@
+import cv2
+image = cv2.imread('C:/Users/THAO/Pictures/Camera Roll/WIN_20231024_08_48_45_Pro.jpg')# điền link ảnh
+
+# định kích thuoc bo loc
+kernel_size=(5,5)
+# Áp dụng bộ lọc Gaussian blur để làm mịn ảnh
+smoothed_image = cv2.GaussianBlur(image, kernel_size, 0)
+
+# Hiển thị ảnh gốc và ảnh đã được làm mịn
+cv2.imshow('Original Image', image)# gốc
+cv2.imshow('Smoothed Image', smoothed_image)# sau làm mịn
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
